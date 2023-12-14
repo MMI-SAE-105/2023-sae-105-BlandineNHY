@@ -68,8 +68,32 @@
 .footer__liste-nav--list--text {
     text-decoration: none;
     color: black;
+    font-family: 'Garet', serif;
+    font-weight: lighter;
+    margin-left: -50px;
 }
 
 .footer__content-reseaux--lien {
     text-decoration: none;
+    margin-left: 5px;
+}
+
+.footer__content-first {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+}
+
+.footer__content-ml {
+    font-family: 'Garet', serif;
+    font-weight: normal;
+
+    margin-left: 30px;
+
+    color: black;
+}
+
+.footer__content-ml-a {
+    text-decoration: none;
+    color: black;
 }
