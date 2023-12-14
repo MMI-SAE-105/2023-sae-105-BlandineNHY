@@ -1,0 +1,19 @@
+.lotimg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.lotimg__content {}
+
+.lotimg__content-center {
+    margin-top: 80px;
+}
+
+.lotimg__content-down {
+    margin-top: -80px;
+}
+
+.lotimg__content-legend {
+    margin-top: -2px;
+    margin-left: 8px;
+}
