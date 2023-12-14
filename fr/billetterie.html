@@ -7,37 +7,71 @@
     <title>Informations</title>
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../src/css/style.css">
 
 </head>
 
 <body>
 
-    <header>
-        <div>
-            <a>
+    <header class="header">
+        <div class="header__logo">
+            <a href="./index.html">
                 <img src="../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
             </a>
         </div>
-        <div>
-            <a>
+        <div class="header__billetterie">
+            <a href="./billetterie.html">
                 <img src="../public/assets/Shopping.svg" alt="Panier">
             </a>
         </div>
-        <div>
-            <a>
+        <div class="header__menu">
+            <a href="./menu.html">
                 <img src="../public/assets/menu.svg" alt="Menu">
             </a>
         </div>
     </header>
 
     <h1 class="titre">Billetterie</h1>
-    <hr>
-    <div class="404">
-        <bodytext class="404__chapo">Précommander dès maintenant vos entrées !</bodytext>
-        <h1 class="404__text">Error 404</h1>
-        <h1 class="404__text">OUPS</h1>
-        <h3 class="404__text">Il semblerait que cette page ne soit pas encore disponible.</h3>
-    </div>
-        <img src="../public/assets/Black_Cat404.svg" alt="Chat">
+    <hr class="titre__hr">
 
-        
+    <div class="404">
+        <p class="error__chapo">Précommander dès maintenant vos entrées !</p>
+        <h1 class="error__text">Error 404</h1>
+        <h1 class="error__text">OUPS</h1>
+        <h3 class="error__text">Il semblerait que cette page ne soit pas encore disponible.</h3>
+    </div>
+    <img src="../public/assets/Black_Cat404.svg" alt="Chat" class="error_cat">
+
+    <div class="blur"></div>
+    <footer class="footer">
+        <div class="footer__content">
+            <nav class="footer__content-nav">
+                <ul class="footer__content-nav--list">
+                    <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
+                    <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
+                    <li><a class="footer__liste-nav--list--text" href=../fr/contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+            <div class="footer__content-reseaux">
+                <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
+                    <img class="footer__content-reseaux--img" src="../public/assets/Instagram.svg" alt="Logo Instagram">
+                </a>
+                <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                    <img class="footer__content-reseaux--img" src="../public/assets/TwitterX.svg" alt="Logo X">
+                </a>
+            </div>
+            <div class="footer__content-down">
+                <div>
+                    <h6>Mention Légales</h6>
+                    <h6>Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                            href="https://mmimontbeliard.com" target="_blank">MMI Montbéliard</a></h6>
+                </div>
+                <a href="#">
+                    <img src="../public/assets/Logo.svg" alt="Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

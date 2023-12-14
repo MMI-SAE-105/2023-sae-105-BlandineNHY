@@ -1,0 +1,16 @@
+.error__text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.error__chapo {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.error_cat {
+    margin-top: 100px;
+    margin-bottom: -40px;
+    position: relative;
+    z-index: -1;
+}
