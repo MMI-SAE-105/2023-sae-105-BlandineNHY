@@ -1,0 +1,8 @@
+.tarif {
+    display: grid;
+    grid-template-columns: 175px 175px;
+}
+
+.gratuit {
+    color: red;
+}
