@@ -4,8 +4,4 @@
 
 @import url("./layout/header.css");
 
-@font-face url("../fonts/Garet.ttf");
-
-@font-face url("../fonts/PlayfairDisplay-Regular.ttf");
-
-@font-face url("../fonts/PlayfairDisplay-Medium.ttf");
+@import url("./base/main.css");
