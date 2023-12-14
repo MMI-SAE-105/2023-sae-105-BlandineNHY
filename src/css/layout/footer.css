@@ -15,6 +15,12 @@ footer {
     margin-top: 20px;
 }
 
-footer__liste {
+.footer__liste {
     list-style: none;
+}
+
+.footer__liste-content {
+    text-decoration: none;
+
+    color: black;
 }
