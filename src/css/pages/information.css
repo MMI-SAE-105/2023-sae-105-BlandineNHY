@@ -33,13 +33,12 @@
 }
 
 
-.tarif {
+.tarifs__info {
     display: grid;
     grid-template-columns: 175px 175px;
 }
 
-.tarif__intitule {
-}
+.tarif__intitule {}
 
 .tarifs__info--inti {
     margin: 10px;
