@@ -3,8 +3,22 @@
     grid-template-columns: 175px 175px;
 }
 
-.red {
-    color: red;
-    font-family: 'Garet', serif;
-    font-weight: normal;
+.titre{
+
+}
+
+.information{
+
+}
+
+.information__intitule{
+
+}
+
+.information__text--red{
+        color: red;
+        font-weight: normal;
+}
+.information__text{
+
 }
