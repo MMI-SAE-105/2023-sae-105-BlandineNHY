@@ -16,16 +16,25 @@
 }
 
 .footer__content {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
 
     padding: 0 20px;
 }
-.footer__content--logo {
+
+/* .footer__content--logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+} */
+
+.footer__content-down {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
 }
 
 .footer__content--logo--img {
@@ -33,15 +42,12 @@
     height: 100px;
 }
 
-.footer__content-reseaux--lien
-
-.footer__liste {
+.footer__content-reseaux--lien .footer__liste {
     list-style: none;
 }
 
 .footer__liste-content {
     text-decoration: none;
-
     color: black;
 }
 
@@ -55,10 +61,15 @@
     color: black;
 }
 
-.footer__liste-content--nav--lien--text {
+.footer__content-nav--list {
+    list-style: none;
+}
+
+.footer__liste-nav--list--text {
     text-decoration: none;
     color: black;
 }
+
 .footer__content-reseaux--lien {
     text-decoration: none;
 }
