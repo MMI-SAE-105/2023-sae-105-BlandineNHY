@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
 
 <head>
     <meta charset="UTF-8">
@@ -26,14 +26,26 @@
             </a>
         </div>
         <div class="header__menu">
-            <a href="./menu.html">
-                <img src="../public/assets/menu.svg" alt="Menu">
-            </a>
+            <img src="../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+            <img src="../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+        </div>
+        <div class="menu" x-show="menuIsOpen">
+            <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
+                        <hr class=" menu__hr">
+                <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/contact.html">Contact</a>
         </div>
     </header>
-
-
-
+    
+    
+    
+    
+    <main class="main" x-show="!menuIsOpen">
     <h1 class="titre">Informations pratiques</h1>
     <hr class="titre__hr">
 
@@ -86,6 +98,7 @@
             d'invalidité,
             Fondation Cartier
             Pass, Etudiants <br> <span class="tarifs__info--inti--red">Gratuit</span></h4>
+        </main>
 
         <div class="blur"></div>
         <footer class="footer">
