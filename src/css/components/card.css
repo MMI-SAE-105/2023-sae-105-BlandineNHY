@@ -12,3 +12,51 @@
     color: white;
     background-color: black;
 }
+
+.card__content--titre {
+    font-family: playfair display medium, serif;
+    font-weight: medium;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.card__content--intro {
+    font-family: garet, sans serif;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.card__content--text {
+    font-family: garet, sans serif;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card__content--btn {
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 3px 7px 0px #00000065;
+    font-family: garet, sans serif;
+    font-weight: regular;
+    font-size: 20px;
+    margin-bottom:10px;
+    text-align: center;
+}
+
+.btn--img {
+    width: 25%;
+    height: 25%;
+}

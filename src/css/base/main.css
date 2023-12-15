@@ -108,3 +108,8 @@ font-size: 32px;
 .index {
     margin-top: 250px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}

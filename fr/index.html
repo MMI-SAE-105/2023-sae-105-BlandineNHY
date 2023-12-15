@@ -29,18 +29,18 @@
         </div>
         <div class="menu" x-show="menuIsOpen">
             <button class="oeuvre__plus-button--menu">
-                 <a class="menu__composent--en" href="../en/index.html" 
-                  onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
+                <a class="menu__composent--en" href="../en/index.html"
+                    onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
             </button>
             <a class="menu__composent" class="menu__composent " href="../fr/hadid.html">Zaha Hadid</a>
             <hr class="menu__hr">
             <a class="menu__composent" href="../fr/oeuvres/oeuvres.html">Œuvres</a>
-                    <hr class=" menu__hr">
-                <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
-                <hr class="menu__hr">
-                <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
-                <hr class="menu__hr">
-                <a class="menu__composent" href="../fr/contact.html">Contact</a>
+            <hr class=" menu__hr">
+            <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/contact.html">Contact</a>
         </div>
     </header>
 
@@ -63,23 +63,21 @@
 
 
             <div class="card__content">
-                <h2>Zaha Hadid</h2>
-                <bodytext>Une architecte visionnaire</bodytext>
-                <h5>Venez découvrir son univers à travers une exposition exceptionnelle</h5>
+                <h2 class="card__content--titre">Zaha Hadid</h2>
+                <p class="card__content--intro">Une architecte visionnaire</p>
+                <h5 class="card__content--text">Venez découvrir son univers à travers une exposition exceptionnelle</h5>
 
-                <button>
-                    <a href="">
-                        <bodytext>Lire</bodytext>
-                        <img src="../public/assets/Double_Down.svg" alt="double fleche">
-                    </a>
-                </button>
+                <a class="card__content--btn" href="">
+                    Lire
+                    <img class="btn--img" src="../public/assets/Double_Down.svg" alt="double fleche">
+                </a>
             </div>
         </div>
 
         <div>
             <section>
                 <h4>Pour découvrir les œuvres majeures présentes dans l’exposition,
-                    <a href="">
+                    <a href="./oeuvres/oeuvres.html">
                         <span class="information__text--red ">
                             cliquez ici !
                         </span>
@@ -91,24 +89,24 @@
         <div class="button__home">
 
             <div>
-                <a href=""></a>
-                <button class="oeuvre__plus-button">
-                    <bodytext>Plus d’informations</bodytext>
-                </button>
+                <a href="./information.html">
+                    <button class="oeuvre__plus-button">
+                        <bodytext>Plus d’informations</bodytext>
+                    </button>
                 </a>
             </div>
 
             <div>
-                <a href="">
+                <a href="./billetterie.html">
                     <button class="oeuvre__plus-button">
-                        Billetterie
+                        <bodytext>Billetterie</bodytext>
                     </button>
                 </a>
             </div>
         </div>
     </main>
 
-</main>
+    </main>
 
     <div class="blur" x-show="!menuIsOpen"></div>
     <footer class="footer" x-show="!menuIsOpen">
