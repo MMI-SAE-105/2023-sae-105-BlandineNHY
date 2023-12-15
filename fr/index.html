@@ -24,10 +24,14 @@
             </a>
         </div>
         <div class="header__menu">
-            <img src="../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
-            <img src="../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+            <button class="header__btn" @click="menuIsOpen=!menuIsOpen" aria-controls="navmain">
+                <img class="header__img" src="../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen"
+                    x-transition.duration.1500ms.opacity.0>
+                <img class="header__img" src="../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen"
+                    x-transition.duration.1500ms.opacity.0>
+            </button>
         </div>
-        <div class="menu" x-show="menuIsOpen">
+        <div class="menu" x-show="menuIsOpen" id="navmain">
             <button class="oeuvre__plus-button--menu">
                 <a class="menu__composent--en" href="../en/index.html"
                     onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>

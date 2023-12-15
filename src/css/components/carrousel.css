@@ -59,6 +59,11 @@
             color: #fff;
         }
 
+         .carrousel_btn:active {
+            background-color: red;
+            color: #fff;
+        }
+
         .carrousel_btn-avant {
             left: 18px;
         }
