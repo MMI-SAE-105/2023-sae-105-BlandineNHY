@@ -33,60 +33,98 @@
     </header>
 
     <main class="main">
-    <h1 class="titre"> œuvres</h1>
-    <hr class="titre__hr">
+        <h1 class="titre"> œuvres</h1>
+        <hr class="titre__hr">
 
-    <div class="carrousel_parent-ecrans" x-ref="parent"
-        @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0) .id">
-        <div id="ecran-1" class="carrousel_ecran">
-            <figure>
-                <img src="../../public/img/Guangzhou_Opera_HouseEXT2caroursel.jpg" alt="Guangzhou_Opera_HouseEXT2caroursel">
-                <figcaption>
-                    <h1>2010</h1>
-                    <p>Guangzhou Opera House à Guangzhou Chine</p>
-                </figcaption>
-            </figure>
+        <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0) .id">
+            <div id="ecran-1" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Guangzhou_Opera_HouseEXT2caroursel.jpg"
+                        alt="Guangzhou_Opera_HouseEXT2caroursel">
+                    <figcaption>
+                        <h1>2010</h1>
+                        <p>Guangzhou Opera House à Guangzhou Chine</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="ecran-2" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/MaxxiEXT1.jpg" alt="MaxxiEXT1" class="carrousel__img">
+                    <figcaption>
+                        <h1>2010</h1>
+                        <p>Le MAXXI à Rome, Italie</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="ecran-3" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/CmacgmEXT3carrousel.jpg" alt="CmacgmEXT3carrousel">
+                    <figcaption>
+                        <h1>2011</h1>
+                        <p>La tour CMA CGM du projet Euroméditerranée à Marseille, France</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="ecran-4" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/PierrevivesEXT2.jpg" alt="PierrevivesEXT2">
+                    <figcaption>
+                        <h1>2012</h1>
+                        <p>Pierrevives à Montpellier, France</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="ecran-5" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
+                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <figcaption>
+                        <h1>2012</h1>
+                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+            <div id="ecran-6" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
+                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <figcaption>
+                        <h1>2012 test</h1>
+                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+            <div id="ecran-7" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
+                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <figcaption>
+                        <h1>2012 test de test</h1>
+                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+            <div id="ecran-8" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
+                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <figcaption>
+                        <h1>2012 test de test de test encore</h1>
+                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
         </div>
-        <div id="ecran-2" class="carrousel_ecran">
-            <figure>
-                <img src="../../public/img/MaxxiEXT1.jpg" alt="MaxxiEXT1">
-                <figcaption>
-                    <h1>2010</h1>
-                    <p>Le MAXXI à Rome, Italie</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div id="ecran-3" class="carrousel_ecran">
-            <figure>
-                <img src="../../public/img/CmacgmEXT3carrousel.jpg" alt="CmacgmEXT3carrousel">
-                <figcaption>
-                    <h1>2011</h1>
-                    <p>La tour CMA CGM du projet Euroméditerranée à Marseille, France</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div id="ecran-4" class="carrousel_ecran">
-            <figure>
-                <img src="../../public/img/PierrevivesEXT2.jpg" alt="PierrevivesEXT2">
-                <figcaption>
-                    <h1>2012</h1>
-                    <p>Pierrevives à Montpellier, France</p>
-                </figcaption>
-            </figure>
-        </div>
-        <div id="ecran-5" class="carrousel_ecran">
-            <figure>
-                <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg" alt="Centre_Heydar_AliyevEXT2carrousel">
-                <figcaption>
-                    <h1>2012</h1>
-                    <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
-                </figcaption>
-            </figure>
-        
-            
-        </div>
-    </div>
-    <div>
+        <div>
     </main>
 
     <div class="blur"></div>
@@ -101,7 +139,8 @@
                     </ul>
                 </nav>
                 <div class="footer__content-reseaux">
-                    <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
+                    <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/"
+                        target="_blank">
                         <img class="footer__content-reseaux--img" src="../../public/assets/Instagram.svg"
                             alt="Logo Instagram">
                     </a>
@@ -124,9 +163,9 @@
             </div>
         </div>
     </footer>
-    
+
     </main>
-    
-    </body>
-    
-    </html>
+
+</body>
+
+</html>

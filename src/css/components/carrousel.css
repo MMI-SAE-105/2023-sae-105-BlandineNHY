@@ -15,12 +15,19 @@
 
         .carrousel_ecran {
             width: 100%;
+            /* height: 400px; */
             flex: none;
             scroll-snap-align: start;
         }
 
+        /* .carrousel__img {
+            height: 50%;
+            width: 100%;
+        } */
+
         .carrousel_ecran figure {
             margin: 0;
+            height: 100%;
         }
 
         .carrousel {
