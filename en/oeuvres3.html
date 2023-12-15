@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ŒUVRES</title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../../src/css/style.css">
+
+</head>
+
+<body>
+<header class="header">
+    <div class="header__logo">
+        <a href="../menu.html">
+            <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
+        </a>
+    </div>
+    <div class="header__billetterie">
+        <a href="../../public/assets/Shopping.svg">
+            <img src="../../public/assets/Shopping.svg" alt="Panier">
+        </a>
+    </div>
+    <div class="header__menu">
+        <img src="../../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+        <img src="../../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+    </div>
+    <div class="menu" x-show="menuIsOpen">
+        <button class="oeuvre__plus-button--menu">
+            <a class="menu__composent--en" href="../../en/oeuvres3.html">English</a>
+        </button>
+        <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
+        <hr class="menu__hr">
+        <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
+                            <hr class=" menu__hr">
+            <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/contact.html">Contact</a>
+    </div>
+</header>
+
+
+
+
+<main class="main" x-show="!menuIsOpen">
+
+    <h1 class="titre">œuvres</h1>
+    <hr class="titre__hr">
+    <h4 class="titre__intro">La tour CMA CGM du projet Euroméditerranée à Marseille, France</h4>
+    <div>
+        <p class="oeuvre__txt">La Tour CMA CGM du projet Euroméditerranée à Marseille, France, est une réalisation architecturale majeure signée Zaha
+        Hadid.</p>
+
+        <div>
+            <img src="../../public/img/CmacgmCROQUIS.jpg" alt="CmacgmCROQUIS" class="oeuvre__img">
+            <h6 class="">Croquis de la tour CMA CGM du projet Euroméditerranée à Marseille, France par ZahaHADID</h6>
+        </div>
+            <p>
+                <p class="oeuvre__txt">Inaugurée en 2011, cette tour emblématique s'élève majestueusement au cœur du quartier Euroméditerranée, incarnant
+                l'élégance contemporaine et l'innovation. Les courbes dynamiques de la structure évoquent un mouvement fluide, reflétant
+                l'importance du port méditerranéen et de Marseille en tant que centre économique.</p>
+            </p>
+            <div class="lotimg">
+                <img src="../../public/img/CmacgmEXT1.jpg" alt="CmacgmEXT1" class="lotimg__content">
+                <div class="lotimg__content-center">
+                    <img src="../../public/img/CmacgmEXT2.jpg" alt="CmacgmEXT2">
+                    <h6 class="lotimg__content-legend">Extérieur de la tour CMA CGM du projet Euroméditerranée à Marseille, France</h6>
+                </div>
+            </div>
+
+                <p class="oeuvre__txt">La Tour CMA CGM devient ainsi un symbole architectural de la modernité, intégrant parfaitement le tissu urbain tout en
+                ajoutant une touche futuriste à l'horizon marseillais. En explorant cette œuvre architecturale, les visiteurs découvrent
+                l'audace créative de Zaha Hadid et son impact sur la renaissance urbaine de Marseille.</p>
+            <div>
+                <img src="../../public/img/CmacgmINT.jpg" alt="CmacgmINT1" class="oeuvre__img">
+                <h6 class="oeuvre__legend">Intérieur de la tour CMA CGM du projet Euroméditerranée à Marseille, France</h6>
+            </div>
+    </div>
+<div class="oeuvre__plus">
+    <h4 class="oeuvre__plus">Pour découvrir d’avantage d’œuvres , cliquez ici !</h4>
+    <a href="oeuvres.html">
+        <button class="oeuvre__plus-button">Voir les œuvres</button>
+    </a>
+</div>
+
+
+
+<div class="blur"></div>
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__content-first">
+            <nav class="footer__content-nav">
+                <ul class="footer__content-nav--list">
+                    <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
+                    <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
+                    <li><a class="footer__liste-nav--list--text" href=../fr/contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+            <div class="footer__content-reseaux">
+                <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
+                    <img class="footer__content-reseaux--img" src="../../public/assets/Instagram.svg"
+                        alt="Logo Instagram">
+                </a>
+                <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                    <img class="footer__content-reseaux--img" src="../../public/assets/TwitterX.svg" alt="Logo X">
+                </a>
+            </div>
+        </div>
+        <div class="footer__content-down">
+            <div>
+                <h6 class="footer__content-ml">Mention Légales</h6>
+                <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
+                    <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
+                        Montbéliard</a>
+                </h6>
+            </div>
+            <a href="#">
+                <img src="../../public/assets/Logo.svg" alt="Logo">
+            </a>
+        </div>
+    </div>
+</footer>
+
+</main>
+
+</body>
+
+</html>

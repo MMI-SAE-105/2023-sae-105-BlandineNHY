@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ŒUVRES</title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../../src/css/style.css">
+
+</head>
+
+    
+<body>
+
+<header class="header">
+    <div class="header__logo">
+        <a href="../menu.html">
+            <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
+        </a>
+    </div>
+    <div class="header__billetterie">
+        <a href="../../public/assets/Shopping.svg">
+            <img src="../../public/assets/Shopping.svg" alt="Panier">
+        </a>
+    </div>
+    <div class="header__menu">
+        <img src="../../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+        <img src="../../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+    </div>
+    <div class="menu" x-show="menuIsOpen">
+        <button class="oeuvre__plus-button--menu">
+            <a class="menu__composent--en" href="../../en/oeuvres4.html">English</a>
+        </button>
+        <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
+        <hr class="menu__hr">
+        <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
+                            <hr class=" menu__hr">
+            <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/contact.html">Contact</a>
+    </div>
+</header>
+
+
+
+
+<main class="main" x-show="!menuIsOpen">
+
+    <h1 class="titre">œuvres</h1>
+    <hr class="titre__hr">
+    <h4 class="titre__intro">Pierrevives à Montpellier, France</h4>
+    <div>
+        <p class="oeuvre__intro"> Pierrevives à Montpellier, France, est une réalisation architecturale remarquable conçue par Zaha Hadid Architects.</p>
+        <div>
+
+            <div class="lotimg">
+                <img src="../../public/img/PierrevivesEXT1.jpg" alt="PierrevivesEXT1" class="lotimg__content">
+                <div class="lotimg__content-center">
+                    <img src="../../public/img/PierrevivesINT1.jpg" alt="PierrevivesINT1">
+                    <h6 class="lotimg__content-legend">Intérieur du Pierrevives à Montpellier, France</h6>
+                </div>
+                <img src="../../public/img/PierrevivesINT2.jpg" alt="PierrevivesINT2" class="lotimg__content-down">
+            </div>
+
+
+
+            <p class="oeuvre__txt">Inauguré en 2012, cet édifice polyvalent incarne l'esthétique futuriste et
+                l'innovation
+                fonctionnelle. Les lignes
+                fluides et les formes dynamiques de la structure créent un espace unique dédié à la culture, aux
+                archives et aux
+                événements publics.</p>
+            <div>
+                <img src="../../public/img/PierrevivesEXT2.jpg" alt="PierrevivesEXT2" class="oeuvre__img">
+                <h6 class="oeuvre__legend">Extérieur du Pierrevives à Montpellier, France</h6>
+            </div>
+            <p class="oeuvre__txt">Pierrevives devient ainsi un point de convergence entre l'histoire et la modernité,
+                où
+                l'architecture devient un
+                catalyseur d'interaction sociale et culturelle.</p>
+            <div>
+                <img src="../../public/img/PierrevivesEXT3.jpg" alt="PierrevivesEXT3" class="oeuvre__img">
+                <h6 class="oeuvre__legend">Extérieur du Pierrevives à Montpellier, France</h6>
+            </div>
+            <p>
+            <p class="oeuvre__txt">En explorant cet édifice novateur, les visiteurs découvrent l'ingéniosité de Zaha
+                Hadid et son
+                impact sur
+                l'enrichissement du patrimoine architectural de Montpellier.</p>
+            </p>
+            <div>
+                <img src="../../public/img/PierrevivesCROQUIS.jpg" alt="PierrevivesCROQUIS" class="oeuvre__img">
+                <h6 class="oeuvre__legend">Croquis du Pierrevives à Montpellier, France par Zaha HADID</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="oeuvre__plus">
+        <h4 class="oeuvre__plus">Pour découvrir d’avantage d’œuvres , cliquez ici !</h4>
+        <a href="oeuvres.html">
+            <button class="oeuvre__plus-button">Voir les œuvres</button>
+        </a>
+    </div>
+
+
+
+    <div class="blur"></div>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content-first">
+                <nav class="footer__content-nav">
+                    <ul class="footer__content-nav--list">
+                        <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
+                        <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
+                        <li><a class="footer__liste-nav--list--text" href=../fr/contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__content-reseaux">
+                    <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
+                        <img class="footer__content-reseaux--img" src="../../public/assets/Instagram.svg" alt="Logo Instagram">
+                    </a>
+                    <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                        <img class="footer__content-reseaux--img" src="../../public/assets/TwitterX.svg" alt="Logo X">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__content-down">
+                <div>
+                    <h6 class="footer__content-ml">Mention Légales</h6>
+                    <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
+                        <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
+                            Montbéliard</a>
+                    </h6>
+                </div>
+                <a href="#">
+                    <img src="../../public/assets/Logo.svg" alt="Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    </main>
+
+    </body>
+    
+    </html>

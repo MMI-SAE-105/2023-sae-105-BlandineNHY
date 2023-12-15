@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ŒUVRES</title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../../src/css/style.css"> 
+
+</head>
+
+<body>
+<header class="header">
+    <div class="header__logo">
+        <a href="../menu.html">
+            <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
+        </a>
+    </div>
+    <div class="header__billetterie">
+        <a href="../../public/assets/Shopping.svg">
+            <img src="../../public/assets/Shopping.svg" alt="Panier">
+        </a>
+    </div>
+    <div class="header__menu">
+        <img src="../../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+        <img src="../../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+    </div>
+    <div class="menu" x-show="menuIsOpen">
+        <button class="oeuvre__plus-button--menu">
+            <a class="menu__composent--en" href="../../en/oeuvres7.html">English</a>
+        </button>
+        <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
+        <hr class="menu__hr">
+        <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
+                            <hr class=" menu__hr">
+            <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/contact.html">Contact</a>
+    </div>
+</header>
+<main class="main" x-show="!menuIsOpen">
+
+    <h1 class="titre">œuvres</h1>
+    <hr class="titre__hr">
+    <h4 class="titre__intro">Antwerp Port House à Anvers, Belgique</h4>
+    <div>
+        <p class="oeuvre__txt">L'Antwerp Port House à Anvers, Belgique, est une œuvre architecturale innovante conçue par Zaha Hadid
+            Architects.</p>
+        <div>
+            <img src="../../public/img/antwerp_port_house_anversEXT.jpg" alt="antwerp_port_house_anversEXT" class="oeuvre__img">
+            <h6 class="oeuvre__legend">Extérieur de l’Antwerp Port House à Anvers, Belgique</h6>
+
+            <p class="oeuvre__txt">Inauguré en 2016, ce bâtiment emblématique fusionne le passé et le futur dans un design
+                saisissant. Les lignes
+                dynamiques et les formes audacieuses de la structure évoquent une voile en mouvement, symbolisant
+                l'importance du port
+                dans l'histoire d'Anvers.</p>
+            <div class="lotimg">
+                <img src="../../public/img/Antwerp_Port_House_AnversINT1.jpg" alt="Antwerp_Port_House_AnversINT1" class="lotimg__content">
+                <div class="lotimg__content-center">
+                    <img src="../../public/img/Antwerp_Port_House_AnversINT2.jpg" alt="Antwerp_Port_House_AnversINT2" class="lotimg__content-down">
+                </div>
+            </div>
+            <h6 class="oeuvre__legend">Intérieur de l’Antwerp Port House à Anvers, Belgique</h6>
+            <p class="oeuvre__txt">L'Antwerp Port House devient ainsi un repère contemporain qui réinterprète brillamment le
+                patrimoine maritime de la
+                ville. En explorant ce chef-d'œuvre architectural, les visiteurs sont invités à découvrir une harmonie
+                unique entre
+                l'innovation architecturale et l'héritage maritime d'Anvers.</p>
+            <div>
+                <img src="../../public/img/antwerp_port_house_anversEXT.jpg" alt="antwerp_port_house_anversEXT" class="oeuvre__img">
+                <h6 class="oeuvre__legend">Extérieur de l’Antwerp Port House à Anvers, Belgique</h6>
+
+                <p class="oeuvre__txt">Inauguré en 2016, ce bâtiment emblématique fusionne le passé et le futur dans un design
+                    saisissant. Les lignes
+                    dynamiques et les formes audacieuses de la structure évoquent une voile en mouvement, symbolisant
+                    l'importance du port
+                    dans l'histoire d'Anvers.</p>
+                <div>
+
+<div class="oeuvre__plus">
+    <h4 class="oeuvre__plus">Pour découvrir d’avantage d’œuvres , cliquez ici !</h4>
+    <a href="oeuvres.html">
+        <button class="oeuvre__plus-button">Voir les œuvres</button>
+    </a>
+</div>
+
+<div class="stickers">
+    <img src="../../public/assets/Antwerp_Port_House_AnversSVG.png" alt="Antwerp_Port_House_AnversSVG">
+</div>
+
+<div class="blur"></div>
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__content-first">
+            <nav class="footer__content-nav">
+                <ul class="footer__content-nav--list">
+                    <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
+                    <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
+                    <li><a class="footer__liste-nav--list--text" href=../fr/contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+            <div class="footer__content-reseaux">
+                <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
+                    <img class="footer__content-reseaux--img" src="../../public/assets/Instagram.svg"
+                        alt="Logo Instagram">
+                </a>
+                <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                    <img class="footer__content-reseaux--img" src="../../public/assets/TwitterX.svg" alt="Logo X">
+                </a>
+            </div>
+        </div>
+        <div class="footer__content-down">
+            <div>
+                <h6 class="footer__content-ml">Mention Légales</h6>
+                <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
+                    <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
+                        Montbéliard</a>
+                </h6>
+            </div>
+            <a href="#">
+                <img src="../../public/assets/Logo.svg" alt="Logo">
+            </a>
+        </div>
+    </div>
+</footer>
+
+</main>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ŒUVRES</title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="../../src/css/style.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="../menu.html">
+                <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
+            </a>
+        </div>
+        <div class="header__billetterie">
+            <a href="../../public/assets/Shopping.svg">
+                <img src="../../public/assets/Shopping.svg" alt="Panier">
+            </a>
+        </div>
+        <div class="header__menu">
+            <img src="../../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+            <img src="../../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen"
+                @click="menuIsOpen=!menuIsOpen">
+        </div>
+        <div class="menu" x-show="menuIsOpen">
+            <button class="oeuvre__plus-button--menu">
+                <a class="menu__composent--en" href="../../en/index.html">English</a>
+            </button>
+            <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
+                        <hr class=" menu__hr">
+                <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/contact.html">Contact</a>
+        </div>
+    </header>
+
+
+
+
+    <main class="main" x-show="!menuIsOpen">
+        <h1 class="titre"> œuvres</h1>
+        <hr class="titre__hr">
+
+        <div class="carrousel_parent-ecrans" x-ref="parent"
+            @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0) .id">
+            <div id="ecran-1" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Guangzhou_Opera_HouseEXT2caroursel.jpg"
+                        alt="Guangzhou_Opera_HouseEXT2caroursel">
+                    <figcaption>
+                        <h1>2010</h1>
+                        <p>Guangzhou Opera House à Guangzhou Chine</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="ecran-2" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/MaxxiEXT1.jpg" alt="MaxxiEXT1" class="carrousel__img">
+                    <figcaption>
+                        <h1>2010</h1>
+                        <p>Le MAXXI à Rome, Italie</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="ecran-3" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/CmacgmEXT3carrousel.jpg" alt="CmacgmEXT3carrousel">
+                    <figcaption>
+                        <h1>2011</h1>
+                        <p>La tour CMA CGM du projet Euroméditerranée à Marseille, France</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="ecran-4" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/PierrevivesEXT2.jpg" alt="PierrevivesEXT2">
+                    <figcaption>
+                        <h1>2012</h1>
+                        <p>Pierrevives à Montpellier, France</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="ecran-5" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
+                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <figcaption>
+                        <h1>2012</h1>
+                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+            <div id="ecran-6" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
+                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <figcaption>
+                        <h1>2012 test</h1>
+                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+            <div id="ecran-7" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
+                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <figcaption>
+                        <h1>2012 test de test</h1>
+                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+            <div id="ecran-8" class="carrousel_ecran">
+                <figure>
+                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
+                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <figcaption>
+                        <h1>2012 test de test de test encore</h1>
+                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+        </div>
+        <div>
+    </main>
+
+    <div class="blur"></div>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content-first">
+                <nav class="footer__content-nav">
+                    <ul class="footer__content-nav--list">
+                        <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
+                        <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
+                        <li><a class="footer__liste-nav--list--text" href=../fr/contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__content-reseaux">
+                    <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/"
+                        target="_blank">
+                        <img class="footer__content-reseaux--img" src="../../public/assets/Instagram.svg"
+                            alt="Logo Instagram">
+                    </a>
+                    <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                        <img class="footer__content-reseaux--img" src="../../public/assets/TwitterX.svg" alt="Logo X">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__content-down">
+                <div>
+                    <h6 class="footer__content-ml">Mention Légales</h6>
+                    <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
+                        <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
+                            Montbéliard</a>
+                    </h6>
+                </div>
+                <a href="#">
+                    <img src="../../public/assets/Logo.svg" alt="Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    </main>
+
+</body>
+
+</html>
