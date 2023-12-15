@@ -26,18 +26,26 @@ h5 {
 }
 
 h6 {
-    font-family: 'Garret', serif;
+    font-family: 'Garet', serif;
+    font-weight: lighter;
     font-size: 8px;
 }
 
 bodytext {
-    font-family: 'playfair display regular', serif;
+    font-family: 'Garet', serif;
+    font-weight: lighter;
     font-size: 14px;
 }
 
+.main {
+    background-color: rgba(242, 242, 242, 1);
+;
+
+}
 
 .titre {
     text-align: center;
+    text-transform: uppercase;
 }
 
 .titre__hr {
@@ -45,6 +53,12 @@ bodytext {
     border: 0.5px solid black;
 }
 
+.titre__intro {
+    text-align: center;
+    font-family: 'Garet', serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
 .title__bg {
     position: absolute;
     z-index: -1;
