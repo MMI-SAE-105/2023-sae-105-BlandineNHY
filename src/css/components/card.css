@@ -1,0 +1,14 @@
+.card {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+}
+
+.card__img {
+    height: 100%;
+}
+
+.card__content {
+    color: white;
+    background-color: black;
+}

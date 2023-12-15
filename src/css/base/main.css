@@ -39,7 +39,7 @@ bodytext {
 
 .main {
     background-color: rgba(242, 242, 242, 1);
-;
+    ;
 
 }
 
@@ -62,6 +62,7 @@ bodytext {
     margin-top: 30px;
     margin-bottom: 80px;
 }
+
 .title__bg {
     position: absolute;
     z-index: -1;
@@ -72,15 +73,25 @@ bodytext {
 }
 
 .navbar {
-position: absolute;
-padding: 50px;
-display: flex
-width: 100%;
-justify-content: space-between;
-box-sizing: border-box;
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .navbar__logo {
     width: 100px;
     height: 100px;
+}
+
+
+.button__home {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
 }
