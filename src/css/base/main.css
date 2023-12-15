@@ -49,7 +49,16 @@ bodytext {
     margin-top: 20px;
 }
 
+.titre__contact {
+margin-top: -150px;
+font-family: playfair display medium, serif;
+font-weight: medium;
+text-align: center;
+font-size: 32px;
+}
+
 .titre__hr {
+    position: relative;
     width: 40%;
     border: 0.5px solid black;
 }
