@@ -43,6 +43,7 @@
 
 .oeuvre__plus {
     text-align: center;
+    padding: 10px;
     font-family: 'Garet', serif;
     font-weight: lighter;
     font-size: 16px;
@@ -52,6 +53,7 @@
     background-color: white;
     border-radius: 3px;
     border: none;
+    margin-bottom: 40px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 5px;
