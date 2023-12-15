@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
 
 <head>
     <meta charset="UTF-8">
@@ -12,11 +12,6 @@
 </head>
 
 <body>
-
-
-
-
-
     <header class="header">
         <div class="header__logo">
             <a href="./index.html">
@@ -29,21 +24,32 @@
             </a>
         </div>
         <div class="header__menu">
-            <a href="./menu.html">
-                <img src="../public/assets/menu.svg" alt="Menu">
-            </a>
+            <img src="../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+            <img src="../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+        </div>
+        <div class="menu" x-show="menuIsOpen">
+            <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
+                    <hr class=" menu__hr">
+                <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/contact.html">Contact</a>
         </div>
     </header>
 
 
 
 
-    <main class="main">
+    <main class="main" x-show="!menuIsOpen">
 
         <h1 class="titre"> Bienvenue</h1>
         <hr class="titre__hr">
 
-        <h4 class="oeuvre__txt">City Outlines est une exposition exceptionnelle dédiée à Zaha Hadid ! Découvrez le génie créatif de cette
+        <h4 class="oeuvre__txt">City Outlines est une exposition exceptionnelle dédiée à Zaha Hadid ! Découvrez le génie
+            créatif de cette
             architecte visionnaire. Achetez vos billets dès maintenant pour une expérience immersive au cœur de
             l'innovation architecturale.</h4>
 
@@ -97,7 +103,7 @@
 
 
     <div class="blur"></div>
-    <footer class="footer">
+    <footer class="footer" x-show="!menuIsOpen">
         <div class="footer__content">
             <nav class="footer__content-nav">
                 <ul class="footer__content-nav--list">
