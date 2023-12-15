@@ -16,12 +16,12 @@
 
     <header class="header">
         <div class="header__logo">
-            <a href="../menu.html">
+            <a href="../index.html">
                 <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
             </a>
         </div>
         <div class="header__billetterie">
-            <a href="../../public/assets/Shopping.svg">
+            <a href="../billetterie.html">
                 <img src="../../public/assets/Shopping.svg" alt="Panier">
             </a>
         </div>
@@ -33,17 +33,17 @@
         <div class="menu" x-show="menuIsOpen">
             <button class="oeuvre__plus-button--menu">
                 <a class="menu__composent--en" href="../../en/index.html"
-                  onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
+                    onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
             </button>
-            <a class="menu__composent" class="menu__composent" href="../fr/hadid.html">Zaha Hadid</a>
+            <a class="menu__composent" class="menu__composent" href="../hadid.html">Zaha Hadid</a>
             <hr class="menu__hr">
             <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
                         <hr class=" menu__hr">
-                <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+                <a class="menu__composent" href="../billetterie.html">Billetterie</a>
                 <hr class="menu__hr">
-                <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+                <a class="menu__composent" href="../information.html">Informations pratiques</a>
                 <hr class="menu__hr">
-                <a class="menu__composent" href="../fr/contact.html">Contact</a>
+                <a class="menu__composent" href="../contact.html">Contact</a>
         </div>
     </header>
 
@@ -57,18 +57,24 @@
         <div class="carrousel_parent-ecrans" x-ref="parent"
             @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0) .id">
             <div id="ecran-1" class="carrousel_ecran">
+
                 <figure>
-                    <img src="../../public/img/Guangzhou_Opera_HouseEXT2caroursel.jpg"
-                        alt="Guangzhou_Opera_HouseEXT2caroursel">
+                    <a href="/fr/oeuvres/oeuvres1.html">
+                        <img src="../../public/img/Guangzhou_Opera_HouseEXT2caroursel.jpg"
+                            alt="Guangzhou_Opera_HouseEXT2caroursel">
+                    </a>
                     <figcaption>
                         <h1>2010</h1>
                         <p>Guangzhou Opera House à Guangzhou Chine</p>
                     </figcaption>
                 </figure>
+
             </div>
             <div id="ecran-2" class="carrousel_ecran">
                 <figure>
+                    <a href="/fr/oeuvres/oeuvres2.html">
                     <img src="../../public/img/MaxxiEXT1.jpg" alt="MaxxiEXT1" class="carrousel__img">
+                    </a>
                     <figcaption>
                         <h1>2010</h1>
                         <p>Le MAXXI à Rome, Italie</p>
@@ -77,7 +83,9 @@
             </div>
             <div id="ecran-3" class="carrousel_ecran">
                 <figure>
+                    <a href="/fr/oeuvres/oeuvres3.html">
                     <img src="../../public/img/CmacgmEXT3carrousel.jpg" alt="CmacgmEXT3carrousel">
+                    </a>
                     <figcaption>
                         <h1>2011</h1>
                         <p>La tour CMA CGM du projet Euroméditerranée à Marseille, France</p>
@@ -86,7 +94,9 @@
             </div>
             <div id="ecran-4" class="carrousel_ecran">
                 <figure>
+                    <a href="/fr/oeuvres/oeuvres4.html">
                     <img src="../../public/img/PierrevivesEXT2.jpg" alt="PierrevivesEXT2">
+                    </a>
                     <figcaption>
                         <h1>2012</h1>
                         <p>Pierrevives à Montpellier, France</p>
@@ -95,8 +105,10 @@
             </div>
             <div id="ecran-5" class="carrousel_ecran">
                 <figure>
+                    <a href="/fr/oeuvres/oeuvres5.html">
                     <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
                         alt="Centre_Heydar_AliyevEXT2carrousel">
+                    </a>
                     <figcaption>
                         <h1>2012</h1>
                         <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
@@ -107,11 +119,13 @@
             </div>
             <div id="ecran-6" class="carrousel_ecran">
                 <figure>
-                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
-                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <a href="/fr/oeuvres/oeuvres6.html">
+                    <img src="../../public/img/Dongdaemun_Design_PlazaEXT.jpg"
+                        alt="Dongdaemun_Design_PlazaEXT">
+                    </a>
                     <figcaption>
-                        <h1>2012 test</h1>
-                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                        <h1>2014</h1>
+                        <p>Dongdaemun Design Plaza Seoul, Corée du Sud</p>
                     </figcaption>
                 </figure>
 
@@ -119,11 +133,13 @@
             </div>
             <div id="ecran-7" class="carrousel_ecran">
                 <figure>
-                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
-                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <a href="/fr/oeuvres/oeuvres2.html">
+                    <img src="../../public/img/antwerp_port_house_anversEXT.jpg"
+                        alt="antwerp_port_house_anversEXT">
+                    </a>
                     <figcaption>
-                        <h1>2012 test de test</h1>
-                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                        <h1>2016</h1>
+                        <p>Antwerp Port House à Anvers, Belgique</p>
                     </figcaption>
                 </figure>
 
@@ -131,11 +147,13 @@
             </div>
             <div id="ecran-8" class="carrousel_ecran">
                 <figure>
-                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
-                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                    <a href="/fr/oeuvres/oeuvres1.html">
+                    <img src="../../public/img/Hotel_Morpheus_MacaoEXT3carrousel.jpg"
+                        alt="Hotel_Morpheus_MacaoEXT3carrousel">
+                    </a>
                     <figcaption>
-                        <h1>2012 test de test de test encore</h1>
-                        <p>Le Centre culturel Heydar-Aliyev à Bakou, Azerbaïdjan</p>
+                        <h1>2018</h1>
+                        <p>L’Hôtel Morpheus à Macao, Chine</p>
                     </figcaption>
                 </figure>
 
@@ -182,7 +200,6 @@
         </div>
     </footer>
 
-    </main>
 
 </body>
 

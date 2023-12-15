@@ -13,37 +13,38 @@
 
 <body>
 
-    <header class="header">
-        <div class="header__logo">
-            <a href="../menu.html">
-                <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
-            </a>
-        </div>
-        <div class="header__billetterie">
-            <a href="../../public/assets/Shopping.svg">
-                <img src="../../public/assets/Shopping.svg" alt="Panier">
-            </a>
-        </div>
-        <div class="header__menu">
-            <img src="../../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
-            <img src="../../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
-        </div>
-        <div class="menu" x-show="menuIsOpen">
-            <button class="oeuvre__plus-button--menu">
-                <a class="menu__composent--en" href="../../en/oeuvres1.html"
-                  onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
-            </button>
-            <a class="menu__composent" class="menu__composent" href="../fr/hadid.html">Zaha Hadid</a>
+<header class="header">
+    <div class="header__logo">
+        <a href="../index.html">
+            <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
+        </a>
+    </div>
+    <div class="header__billetterie">
+        <a href="../billetterie.html">
+            <img src="../../public/assets/Shopping.svg" alt="Panier">
+        </a>
+    </div>
+    <div class="header__menu">
+        <img src="../../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+        <img src="../../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+    </div>
+    <div class="menu" x-show="menuIsOpen">
+        <button class="oeuvre__plus-button--menu">
+            <a class="menu__composent--en" href="../../en/oeuvres1.html"
+                onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
+        </button>
+        <a class="menu__composent" class="menu__composent" href="../hadid.html">Zaha Hadid</a>
+        <hr class="menu__hr">
+        <a class="menu__composent" href="../fr/oeuvres/oeuvres.html">Œuvres</a>
+                        <hr class=" menu__hr">
+            <a class="menu__composent" href="../billetterie.html">Billetterie</a>
             <hr class="menu__hr">
-            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
-                            <hr class=" menu__hr">
-                <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
-                <hr class="menu__hr">
-                <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
-                <hr class="menu__hr">
-                <a class="menu__composent" href="../fr/contact.html">Contact</a>
-        </div>
-    </header>
+            <a class="menu__composent" href="../information.html">Informations pratiques</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../contact.html">Contact</a>
+    </div>
+</header>
+
 
 
 
@@ -85,6 +86,8 @@
         <button class="oeuvre__plus-button">Voir les œuvres</button>
     </a>
 </div>
+</main>
+
 
 <div class="blur"></div>
 <footer class="footer">
@@ -122,7 +125,7 @@
     </div>
 </footer>
 
-</main>
+
 
 </body>
 

@@ -10,9 +10,9 @@
 
 .error_cat {
     margin-top: 100px;
-    margin-bottom: -30px;
+    margin-bottom: -22px;
     margin-left: 10px;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     scale: 125%;
 }
