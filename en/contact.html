@@ -29,12 +29,12 @@
         </div>
         <div class="menu" x-show="menuIsOpen">
             <button class="oeuvre__plus-button--menu">
-                 <a class="menu__composent--en" href="../en/contact.html"
-                    onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
+                 <a class="menu__composent--en" href="../fr/contact.html"
+                    onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">Français</a>
             </button>
-            <a class="menu__composent" class="menu__composent" href="../fr/hadid.html">Zaha Hadid</a>
+            <a class="menu__composent" class="menu__composent " href="../fr/hadid.html">Zaha Hadid</a>
             <hr class="menu__hr">
-            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
+            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html">Œuvres</a>
                     <hr class=" menu__hr">
                 <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
                 <hr class="menu__hr">
@@ -47,8 +47,9 @@
     
     
     <main class="main" x-show="!menuIsOpen">
-
-
+    <img src="./../public/img/fondation_cartierEXT.jpg" alt="fondation_cartierEXT">
+    <h1 class="titre__contact">Contact</h1>
+    <hr class="titre__hr">
         <div>
             <section class="forms">
                 <h3 class="forms__intitule">Formulaire de contact</h3>
@@ -70,9 +71,41 @@
             </section>
 
         </div>
+</main>
+<div class="blur"></div>
+<footer class="footer">
+    <div class="footer__content">
+        <div class="footer__content-first">
+            <nav class="footer__content-nav">
+                <ul class="footer__content-nav--list">
+                    <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
+                    <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
+                    <li><a class="footer__liste-nav--list--text" href="../fr/contact.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+            <div class="footer__content-reseaux">
+                <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
+                    <img class="footer__content-reseaux--img" src="../../public/assets/Instagram.svg"
+                        alt="Logo Instagram">
+                </a>
+                <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                    <img class="footer__content-reseaux--img" src="../../public/assets/TwitterX.svg" alt="Logo X">
+                </a>
+            </div>
+        </div>
+        <div class="footer__content-down">
+            <div>
+                <h6 class="footer__content-ml">Mention Légales</h6>
+                <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
+                    <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
+                        Montbéliard</a>
+                </h6>
+            </div>
+            <a href="#">
+                <img src="../../public/assets/Logo.svg" alt="Logo">
+            </a>
+        </div>
+    </div>
+</footer>
 
-    </main>
-    <footer>
-
-    </footer>
 </body>

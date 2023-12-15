@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Accueil</title>
     <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="../src/css/style.css">
@@ -28,15 +28,19 @@
             <img src="../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
         </div>
         <div class="menu" x-show="menuIsOpen">
-            <a class="menu__composent" class="menu__composent" href="../fr/hadid.html">Zaha Hadid</a>
+            <button class="oeuvre__plus-button--menu">
+                <a class="menu__composent--en" href="../fr/index.html"
+                    onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">Français</a>
+            </button>
+            <a class="menu__composent" class="menu__composent " href="../fr/hadid.html">Zaha Hadid</a>
             <hr class="menu__hr">
-            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Creation</a>
-                    <hr class=" menu__hr">
-                <a class="menu__composent" href=" ../fr/billetterie.html">Tickets</a>
-                <hr class="menu__hr">
-                <a class="menu__composent" href="../fr/information.html">Practical information</a>
-                <hr class="menu__hr">
-                <a class="menu__composent" href="../fr/contact.html">Contact</a>
+            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html">Œuvres</a>
+            <hr class=" menu__hr">
+            <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/contact.html">Contact</a>
         </div>
     </header>
 
@@ -45,10 +49,13 @@
 
     <main class="main" x-show="!menuIsOpen">
 
-        <h1 class="titre">Welcome</h1>
+        <h1 class="titre"> Bienvenue</h1>
         <hr class="titre__hr">
 
-        <h4 class="oeuvre__txt">City Outlines is an exceptional exhibition dedicated to Zaha Hadid! Discover the creative of this visionary visionary architect. Buy your tickets now for an immersive experience at the heart of architectural innovation.</h4>
+        <h4 class="oeuvre__txt">City Outlines est une exposition exceptionnelle dédiée à Zaha Hadid ! Découvrez le génie
+            créatif de cette
+            architecte visionnaire. Achetez vos billets dès maintenant pour une expérience immersive au cœur de
+            l'innovation architecturale.</h4>
 
 
         <div class="card">
@@ -56,25 +63,23 @@
 
 
             <div class="card__content">
-                <h2>Zaha Hadid</h2>
-                <bodytext>A visionary architect</bodytext>
-                <h5>Come and discover his world through an exceptional exhibition</h5>
+                <h2 class="card__content--titre">Zaha Hadid</h2>
+                <p class="card__content--intro">Une architecte visionnaire</p>
+                <h5 class="card__content--text">Venez découvrir son univers à travers une exposition exceptionnelle</h5>
 
-                <button>
-                    <a href="">
-                        <bodytext>Read</bodytext>
-                        <img src="../public/assets/Double_Down.svg" alt="double fleche">
-                    </a>
-                </button>
+                <a class="card__content--btn" href="">
+                    Lire
+                    <img class="btn--img" src="../public/assets/Double_Down.svg" alt="double fleche">
+                </a>
             </div>
         </div>
 
         <div>
             <section>
-                <h4>Discover the major works in the exhibition,
-                    <a href="">
+                <h4 class="oeuvre__plus">Pour découvrir les œuvres majeures présentes dans l’exposition,
+                    <a href="./oeuvres/oeuvres.html">
                         <span class="information__text--red ">
-                            click here!
+                            cliquez ici !
                         </span>
                     </a>
                 </h4>
@@ -84,51 +89,57 @@
         <div class="button__home">
 
             <div>
-                <a href=""></a>
-                <button class="oeuvre__plus-button">
-                    <bodytext>More information</bodytext>
-                </button>
+                <a href="./information.html">
+                    <button class="oeuvre__plus-button">
+                        <bodytext>Plus d’informations</bodytext>
+                    </button>
                 </a>
             </div>
 
             <div>
-                <a href="">
+                <a href="./billetterie.html">
                     <button class="oeuvre__plus-button">
-                        Tickets
+                        <bodytext>Billetterie</bodytext>
                     </button>
                 </a>
             </div>
         </div>
     </main>
 
-
+    </main>
 
     <div class="blur" x-show="!menuIsOpen"></div>
-    <footer class="footer" x-show="!menuIsOpen">
+    <footer class="footer">
         <div class="footer__content">
-            <nav class="footer__content-nav">
-                <ul class="footer__content-nav--list">
-                    <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Tickets</a></li>
-                    <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Information</a></li>
-                    <li><a class="footer__liste-nav--list--text" href=../fr/contact.html">Contact us</a></li>
-                </ul>
-            </nav>
-            <div class="footer__content-reseaux">
-                <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
-                    <img class="footer__content-reseaux--img" src="../public/assets/Instagram.svg" alt="Logo Instagram">
-                </a>
-                <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
-                    <img class="footer__content-reseaux--img" src="../public/assets/TwitterX.svg" alt="Logo X">
-                </a>
+            <div class="footer__content-first">
+                <nav class="footer__content-nav">
+                    <ul class="footer__content-nav--list">
+                        <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
+                        <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
+                        <li><a class="footer__liste-nav--list--text" href="../fr/contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__content-reseaux">
+                    <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/"
+                        target="_blank">
+                        <img class="footer__content-reseaux--img" src="../../public/assets/Instagram.svg"
+                            alt="Logo Instagram">
+                    </a>
+                    <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                        <img class="footer__content-reseaux--img" src="../../public/assets/TwitterX.svg" alt="Logo X">
+                    </a>
+                </div>
             </div>
             <div class="footer__content-down">
                 <div>
-                    <h6>Legal Notice</h6>
-                    <h6>Project carried out as part of an educational exercise in the department <a
-                            href="https://mmimontbeliard.com" target="_blank" >MMI Montbéliard</a></h6>
+                    <h6 class="footer__content-ml">Mention Légales</h6>
+                    <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
+                        <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
+                            Montbéliard</a>
+                    </h6>
                 </div>
                 <a href="#">
-                    <img src="../public/assets/Logo.svg" alt="Logo">
+                    <img src="../../public/assets/Logo.svg" alt="Logo">
                 </a>
             </div>
         </div>

@@ -12,14 +12,15 @@
 </head>
 
 <body>
+
 <header class="header">
     <div class="header__logo">
-        <a href="../menu.html">
+        <a href="../index.html">
             <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
         </a>
     </div>
     <div class="header__billetterie">
-        <a href="../../public/assets/Shopping.svg">
+        <a href="../billetterie.html">
             <img src="../../public/assets/Shopping.svg" alt="Panier">
         </a>
     </div>
@@ -29,53 +30,64 @@
     </div>
     <div class="menu" x-show="menuIsOpen">
         <button class="oeuvre__plus-button--menu">
-            <a class="menu__composent--en" href="../../en/oeuvres6.html"
-                onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
+            <a class="menu__composent--en" href="../../fr/oeuvres1.html"
+                onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">Français</a>
         </button>
-        <a class="menu__composent" class="menu__composent" href="../fr/hadid.html">Zaha Hadid</a>
+        <a class="menu__composent" class="menu__composent" href="../hadid.html">Zaha Hadid</a>
         <hr class="menu__hr">
-        <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
-                            <hr class=" menu__hr">
-            <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+        <a class="menu__composent" href="../fr/oeuvres/oeuvres.html">Œuvres</a>
+                        <hr class=" menu__hr">
+            <a class="menu__composent" href="../billetterie.html">Billetterie</a>
             <hr class="menu__hr">
-            <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+            <a class="menu__composent" href="../information.html">Informations pratiques</a>
             <hr class="menu__hr">
-            <a class="menu__composent" href="../fr/contact.html">Contact</a>
+            <a class="menu__composent" href="../contact.html">Contact</a>
     </div>
 </header>
+
+
+
+
+
 <main class="main" x-show="!menuIsOpen">
 
     <h1 class="titre">œuvres</h1>
     <hr class="titre__hr">
-    <h4 class="titre__intro">Dongdaemun Design Plaza Seoul, Corée du Sud</h4>
-    <div>
-        <p class="oeuvre__intro">Le Dongdaemun Design Plaza (DDP) à Séoul, Corée du Sud, est une merveille architecturale contemporaine signée Zaha
-        Hadid.</p>
+    <h4 class="titre__intro">Guangzhou Opera House à Guangzhou, Chine</h4>
         <div>
-            <div class="lotimg">
-                <img src="../../public/img/Dongdaemun_Design_PlazaCROQUIS1.jpg" alt="Dongdaemun_Design_PlazaCROQUIS1" class="lotimg__content">
-            <div class="lotimg__content-center">
-                <img src="../../public/img/Dongdaemun_Design_PlazaCROQUIS2.jpg" alt="Dongdaemun_Design_PlazaCROQUIS2" class="lotimg__content">
-                <h6 class="lotimg__content-legend">Croquis Dongdaemun Design Plaza Seoul, Corée du Sud par Zaha HADID</h6>
-            </div>
-            <img src="../../public/img/Dongdaemun_Design_PlazaCROQUIS3.jpg" alt="Dongdaemun_Design_PlazaCROQUIS3" class="lotimg__content">
-        </div>
-        
-
-            <p class="oeuvre__txt">Inauguré en 2014, ce complexe multifonctionnel allie l'esthétique futuriste à des fonctionnalités novatrices. Les
-            courbes organiques et les lignes fluides du DDP créent une structure visuellement époustouflante, intégrant des espaces
-            publics, des boutiques, des espaces d'exposition et des aires de repos.</p>
+            <p class="oeuvre__txt">La Guangzhou Opera House, située à Guangzhou, Chine, est une réalisation architecturale magistrale conçue
+                par Zaha
+                Hadid.</p>
             <div>
-                <img src="../../public/img/Dongdaemun_Design_PlazaINT.jpg" alt="Dongdaemun_Design_PlazaINT"  class="oeuvre__img">
-                <h6 class="oeuvre__legend">"Intérieur du Dongdaemun Design Plaza Seoul, Corée du Sud</h6>
+                <img src="../../public/img/Guangzhou_Opera_HouseINT1.jpg" alt="Guangzhou_Opera_HouseINT1" class="oeuvre__img">
+                <h6 class="oeuvre__legend">Intérieur du Guangzhou Opera House à Guangzhou, Chine</h6>
             </div>
-            
+            <p class="oeuvre__txt">Inauguré en 2010, ce chef-d'œuvre incarne l'élégance et l'innovation. Les formes fluides et organiques de
+                la structure
+                semblent émerger naturellement de son environnement urbain. La symbiose entre l'esthétique contemporaine et la
+                fonctionnalité artistique fait de cet opéra un lieu emblématique.</p>
+            <div>
+                <img src="../../public/img/Guangzhou_Opera_HouseCROQUIS.jpg" alt="Guangzhou_Opera_HouseCROQUIS" class="oeuvre__img">
+                <h6 class="oeuvre__legend">Croquis Guangzhou Opera House à Guangzhou, Chine par Zaha HADID</h6>
+            </div>
+            <p class="oeuvre__txt">En explorant la Guangzhou Opera House, les visiteurs sont transportés dans un univers où l'architecture devient une
+            œuvre d'art vivante, témoignant du génie créatif de Zaha Hadid.</p>
+            <div>
+                <img src="../../public/img/Guangzhou_Opera_HouseEXT1.jpg" alt="Guangzhou_Opera_HouseEXT1" class="oeuvre__img">
+                <h6 class="oeuvre__legend">Extérieur du Guangzhou Opera House à Guangzhou, Chine</h6>
+            </div>
+            </div>
+        </div>
+
+        
 <div class="oeuvre__plus">
     <h4 class="oeuvre__plus">Pour découvrir d’avantage d’œuvres , cliquez ici !</h4>
     <a href="oeuvres.html">
         <button class="oeuvre__plus-button">Voir les œuvres</button>
     </a>
 </div>
+</main>
+
 
 <div class="blur"></div>
 <footer class="footer">
@@ -85,7 +97,7 @@
                 <ul class="footer__content-nav--list">
                     <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
                     <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
-                    <li><a class="footer__liste-nav--list--text" href=../fr/contact.html">Nous contacter</a></li>
+                    <li><a class="footer__liste-nav--list--text" href="../fr/contact.html">Nous contacter</a></li>
                 </ul>
             </nav>
             <div class="footer__content-reseaux">
@@ -113,7 +125,7 @@
     </div>
 </footer>
 
-</main>
+
 
 </body>
 

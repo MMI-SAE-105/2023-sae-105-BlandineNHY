@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ŒUVRES</title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../../src/css/style.css">
+
+</head>
+
+<body>
+<header class="header">
+    <div class="header__logo">
+        <a href="../index.html">
+            <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
+        </a>
+    </div>
+    <div class="header__billetterie">
+        <a href="../billetterie.html">
+            <img src="../../public/assets/Shopping.svg" alt="Panier">
+        </a>
+    </div>
+    <div class="header__menu">
+        <img src="../../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+        <img src="../../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+    </div>
+    <div class="menu" x-show="menuIsOpen">
+        <button class="oeuvre__plus-button--menu">
+            <a class="menu__composent--en" href="../../fr/oeuvres6.html"
+                onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">Français</a>
+        </button>
+        <a class="menu__composent" class="menu__composent" href="../hadid.html">Zaha Hadid</a>
+        <hr class="menu__hr">
+        <a class="menu__composent" href="../fr/oeuvres/oeuvres.html">Œuvres</a>
+                        <hr class=" menu__hr">
+            <a class="menu__composent" href="../billetterie.html">Billetterie</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../information.html">Informations pratiques</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../contact.html">Contact</a>
+    </div>
+</header>
+
+
+<main class="main" x-show="!menuIsOpen">
+
+    <h1 class="titre">œuvres</h1>
+    <hr class="titre__hr">
+    <h4 class="titre__intro">Dongdaemun Design Plaza Seoul, Corée du Sud</h4>
+    <div>
+        <p class="oeuvre__intro">Le Dongdaemun Design Plaza (DDP) à Séoul, Corée du Sud, est une merveille architecturale contemporaine signée Zaha
+        Hadid.</p>
+        <div>
+            <div class="lotimg">
+                <img src="../../public/img/Dongdaemun_Design_PlazaCROQUIS1.jpg" alt="Dongdaemun_Design_PlazaCROQUIS1" class="lotimg__content">
+            <div class="lotimg__content-center">
+                <img src="../../public/img/Dongdaemun_Design_PlazaCROQUIS2.jpg" alt="Dongdaemun_Design_PlazaCROQUIS2" class="lotimg__content">
+                <h6 class="lotimg__content-legend">Croquis Dongdaemun Design Plaza Seoul, Corée du Sud par Zaha HADID</h6>
+            </div>
+            <img src="../../public/img/Dongdaemun_Design_PlazaCROQUIS3.jpg" alt="Dongdaemun_Design_PlazaCROQUIS3" class="lotimg__content">
+        </div>
+        
+
+            <p class="oeuvre__txt">Inauguré en 2014, ce complexe multifonctionnel allie l'esthétique futuriste à des fonctionnalités novatrices. Les
+            courbes organiques et les lignes fluides du DDP créent une structure visuellement époustouflante, intégrant des espaces
+            publics, des boutiques, des espaces d'exposition et des aires de repos.</p>
+            <div>
+                <img src="../../public/img/Dongdaemun_Design_PlazaINT.jpg" alt="Dongdaemun_Design_PlazaINT"  class="oeuvre__img">
+                <h6 class="oeuvre__legend">"Intérieur du Dongdaemun Design Plaza Seoul, Corée du Sud</h6>
+            </div>
+            
+<div class="oeuvre__plus">
+    <h4 class="oeuvre__plus">Pour découvrir d’avantage d’œuvres , cliquez ici !</h4>
+    <a href="oeuvres.html">
+        <button class="oeuvre__plus-button">Voir les œuvres</button>
+    </a>
+</div>
+
+</main>
+
+    <div class="blur"></div>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__content-first">
+                <nav class="footer__content-nav">
+                    <ul class="footer__content-nav--list">
+                        <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
+                        <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
+                        <li><a class="footer__liste-nav--list--text" href="../fr/contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__content-reseaux">
+                    <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/" target="_blank">
+                        <img class="footer__content-reseaux--img" src="../../public/assets/Instagram.svg"
+                            alt="Logo Instagram">
+                    </a>
+                    <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                        <img class="footer__content-reseaux--img" src="../../public/assets/TwitterX.svg" alt="Logo X">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__content-down">
+                <div>
+                    <h6 class="footer__content-ml">Mention Légales</h6>
+                    <h6 class="footer__content-ml">Projet réalisé dans le cadre d’un exercice pédagogique au département
+                        <a href="https://mmimontbeliard.com" target="_blank" class="footer__content-ml-a">MMI
+                            Montbéliard</a>
+                    </h6>
+                </div>
+                <a href="#">
+                    <img src="../../public/assets/Logo.svg" alt="Logo">
+                </a>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
