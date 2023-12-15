@@ -28,6 +28,10 @@
             <img src="../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
         </div>
         <div class="menu" x-show="menuIsOpen">
+            <button class="oeuvre__plus-button--menu">
+                 <a class="menu__composent--en" href="../en/index.html" 
+                  onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
+            </button>
             <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
             <hr class="menu__hr">
             <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
