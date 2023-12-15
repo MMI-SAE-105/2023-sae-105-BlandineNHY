@@ -70,3 +70,11 @@
     font-family: 'Garet', serif;
     font-weight: lighter;
 }
+
+.stickers {
+    margin-left: 10px;
+    position: relative;
+    margin-left: 80px;
+    margin-bottom: -24px;
+    scale: 100%;
+}
