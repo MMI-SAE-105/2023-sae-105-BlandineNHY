@@ -1,0 +1,21 @@
+.menu__hr {
+    width: 40%;
+    border: 0.2px
+    solid rgba(195, 0, 0, 1);
+}
+
+.menu__composent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: garet, sans serif;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.menu__composent--first {
+    margin-top: 50px;
+}
