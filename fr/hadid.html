@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"> x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
 
 <head>
     <meta charset="UTF-8">
@@ -14,26 +14,34 @@
 <body>
 
 
+
     <header class="header">
         <div class="header__logo">
-            <a href="../../fr/index.html">
-                <img src="../../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
+            <a href="./index.html">
+                <img src="../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
             </a>
         </div>
         <div class="header__billetterie">
-            <a href="../../fr/billetterie.html">
-                <img src="../../public/assets/Shopping.svg" alt="Panier">
+            <a href="./billetterie.html">
+                <img src="../public/assets/Shopping.svg" alt="Panier">
             </a>
         </div>
         <div class="header__menu">
-            <a href="../../fr/menu.html">
-                <img src="../../public/assets/menu.svg" alt="Menu">
-            </a>
+            <img src="../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+            <img src="../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+        </div>
+        <div class="menu" x-show="menuIsOpen">
+            <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
+                        <hr class=" menu__hr">
+                <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/contact.html">Contact</a>
         </div>
     </header>
-
-
-    <main class="main">
 
     <h1 class="titre">Zaha hadid</h1>
      <hr class="titre__hr">
