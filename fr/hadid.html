@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"> x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,6 @@
 </head>
 
 <body>
-
-
 
     <header class="header">
         <div class="header__logo">
@@ -31,10 +29,13 @@
             <img src="../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
         </div>
         <div class="menu" x-show="menuIsOpen">
+            <button class="oeuvre__plus-button--menu">
+                 <a class="menu__composent--en" href="../en/index.html">English</a>
+            </button>
             <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
             <hr class="menu__hr">
             <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
-                        <hr class=" menu__hr">
+                    <hr class=" menu__hr">
                 <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
                 <hr class="menu__hr">
                 <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>

@@ -27,6 +27,30 @@
     font-size: 16px;
 }
 
+.menu__composent--en {
+    margin-right: 100px;
+    text-decoration: none;
+    front-family: garet, sans serif;
+    font-weight: regular;
+}
+
 .menu__composent--first {
     margin-top: 50px;
+}
+
+.oeuvre__plus-button--menu {
+    background-color: white;
+    border-radius: 3px;
+    border: none;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 3px 7px 0px #00000065;
+    front-family: garet, sans serif;
+    font-weight: regular;
+    font-size: 20px;
+    hover: background-color: red;
+    text-align: center;
 }
