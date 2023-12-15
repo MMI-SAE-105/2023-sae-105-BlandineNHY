@@ -53,6 +53,14 @@
     <main class="main" x-show="!menuIsOpen">
         <h1 class="titre"> œuvres</h1>
         <hr class="titre__hr">
+        <button class="carrousel_btn carrousel_btn-avant" aria-label="slideprécedant"
+            @click="$refs.parent.scrollLeft-=$refs.parent.clientWidth">
+            &lt;
+        </button>
+        <button class="carrousel_btn carrousel_btn-apres" aria-label="slidesuivant"
+            @click="$refs.parent.scrollLeft+=$refs.parent.clientWidth">
+            >
+        </button>
 
         <div class="carrousel_parent-ecrans" x-ref="parent"
             @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0) .id">
@@ -73,7 +81,7 @@
             <div id="ecran-2" class="carrousel_ecran">
                 <figure>
                     <a href="/fr/oeuvres/oeuvres2.html">
-                    <img src="../../public/img/MaxxiEXT1.jpg" alt="MaxxiEXT1" class="carrousel__img">
+                        <img src="../../public/img/MaxxiEXT1.jpg" alt="MaxxiEXT1" class="carrousel__img">
                     </a>
                     <figcaption>
                         <h1>2010</h1>
@@ -84,7 +92,7 @@
             <div id="ecran-3" class="carrousel_ecran">
                 <figure>
                     <a href="/fr/oeuvres/oeuvres3.html">
-                    <img src="../../public/img/CmacgmEXT3carrousel.jpg" alt="CmacgmEXT3carrousel">
+                        <img src="../../public/img/CmacgmEXT3carrousel.jpg" alt="CmacgmEXT3carrousel">
                     </a>
                     <figcaption>
                         <h1>2011</h1>
@@ -95,7 +103,7 @@
             <div id="ecran-4" class="carrousel_ecran">
                 <figure>
                     <a href="/fr/oeuvres/oeuvres4.html">
-                    <img src="../../public/img/PierrevivesEXT2.jpg" alt="PierrevivesEXT2">
+                        <img src="../../public/img/PierrevivesEXT2.jpg" alt="PierrevivesEXT2">
                     </a>
                     <figcaption>
                         <h1>2012</h1>
@@ -106,8 +114,8 @@
             <div id="ecran-5" class="carrousel_ecran">
                 <figure>
                     <a href="/fr/oeuvres/oeuvres5.html">
-                    <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
-                        alt="Centre_Heydar_AliyevEXT2carrousel">
+                        <img src="../../public/img/Centre_Heydar_AliyevEXT2carrousel.jpg"
+                            alt="Centre_Heydar_AliyevEXT2carrousel">
                     </a>
                     <figcaption>
                         <h1>2012</h1>
@@ -120,8 +128,7 @@
             <div id="ecran-6" class="carrousel_ecran">
                 <figure>
                     <a href="/fr/oeuvres/oeuvres6.html">
-                    <img src="../../public/img/Dongdaemun_Design_PlazaEXT.jpg"
-                        alt="Dongdaemun_Design_PlazaEXT">
+                        <img src="../../public/img/Dongdaemun_Design_PlazaEXT.jpg" alt="Dongdaemun_Design_PlazaEXT">
                     </a>
                     <figcaption>
                         <h1>2014</h1>
@@ -134,8 +141,7 @@
             <div id="ecran-7" class="carrousel_ecran">
                 <figure>
                     <a href="/fr/oeuvres/oeuvres2.html">
-                    <img src="../../public/img/antwerp_port_house_anversEXT.jpg"
-                        alt="antwerp_port_house_anversEXT">
+                        <img src="../../public/img/antwerp_port_house_anversEXT.jpg" alt="antwerp_port_house_anversEXT">
                     </a>
                     <figcaption>
                         <h1>2016</h1>
@@ -148,8 +154,8 @@
             <div id="ecran-8" class="carrousel_ecran">
                 <figure>
                     <a href="/fr/oeuvres/oeuvres1.html">
-                    <img src="../../public/img/Hotel_Morpheus_MacaoEXT3carrousel.jpg"
-                        alt="Hotel_Morpheus_MacaoEXT3carrousel">
+                        <img src="../../public/img/Hotel_Morpheus_MacaoEXT3carrousel.jpg"
+                            alt="Hotel_Morpheus_MacaoEXT3carrousel">
                     </a>
                     <figcaption>
                         <h1>2018</h1>
