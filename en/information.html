@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}" :class="noscroll:menuIsOpen">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations</title>
+    <script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="../src/css/style.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">
+            <a href="./index.html">
+                <img src="../public/assets/CITY_OUTLINES.svg" alt="Logo CITY OUTLINES">
+            </a>
+        </div>
+        <div class="header__billetterie">
+            <a href="./billetterie.html">
+                <img src="../public/assets/Shopping.svg" alt="Panier">
+            </a>
+        </div>
+        <div class="header__menu">
+            <img src="../public/assets/menu.svg" alt="Menu" x-show="!menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+            <img src="../public/assets/cross_black.svg" alt="Menu" x-show="menuIsOpen" @click="menuIsOpen=!menuIsOpen">
+        </div>
+        <div class="menu" x-show="menuIsOpen">
+            <button class="oeuvre__plus-button--menu">
+                <a class="menu__composent--en" href="../en/information.html"
+                    onclick="document.cookie = `nf_lang=en; path=/ ; SameSite=Strict` ">English</a>
+            </button>
+            <a class="menu__composent" class="menu__composent--first " href="../fr/hadid.html">Zaha Hadid</a>
+            <hr class="menu__hr">
+            <a class="menu__composent" href="../fr/oeuvres/oeuvres.html href="">Œuvres</a>
+                        <hr class=" menu__hr">
+                <a class="menu__composent" href=" ../fr/billetterie.html">Billetterie</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/information.html">Informations pratiques</a>
+                <hr class="menu__hr">
+                <a class="menu__composent" href="../fr/contact.html">Contact</a>
+        </div>
+    </header>
+    
+    
+    
+    
+    <main class="main" x-show="!menuIsOpen">
+    <h1 class="titre">Informations pratiques</h1>
+    <hr class="titre__hr">
+
+    <div class="information">
+        <h3 class="information__intitule">Dates</h3>
+        <p class="information__text">Du <span class="information__text--red">13 avril</span> au <span
+                class="information__text--red">23 juin 2024</span></p>
+        <h3 class="information__intitule">Horaires</h3>
+        <p class="information__text">Tous les jours de <span class="information__text--red">11h à 20h</span>, sauf le
+            lundi. <br><span class="information__text--red">Nocturne le mardi, jusqu'à
+                22h.</span><br><br>La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+        <h3 class="information__intitule">Lieu</h3>
+        <p class="information__text">Fondation Cartier, 261 Bd Raspail, 75014 Paris.</p>
+    </div>
+
+    <div class="maps">
+        <iframe class="maps__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.096830605496!2d2.329340177573563!3d48.83729167132911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671c80c12b47d%3A0x225ddbf564cf5d5a!2sFondation%20Cartier%20pour%20l&#39;art%20contemporain!5e0!3m2!1sfr!2sfr!4v1702509479127!5m2!1sfr!2sfr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div class="tarifs">
+        <h3 class="tarifs__intitule">Tarifs</h3>
+
+        <div class="tarifs__info">
+            <div>
+                <h4 class="tarifs__info--inti">Plein tarif <br>
+                    <span class="tarifs__info--inti--red">11€</span>
+                </h4>
+            </div>
+            <div>
+                <h4 class="tarifs__info--inti">Tarif réduit <br>
+                    <span class="tarifs__info--inti--red">7,50€</span>
+                </h4>
+            </div>
+            <div>
+                <h4 class="tarifs__info--inti">Réduction 13 - 25 ans <br>
+                    <span class="tarifs__info--inti--red">5€</span>
+                </h4>
+            </div>
+            <div>
+                <h4 class="tarifs__info--inti">Fondation Cartier Pass <br>
+                    <span class="tarifs__info--inti--red">18€ - 50€</span>
+                </h4>
+            </div>
+        </div>
+        <h4 class="tarifs__info--inti">Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte
+            d'invalidité,
+            Fondation Cartier
+            Pass, Etudiants <br> <span class="tarifs__info--inti--red">Gratuit</span></h4>
+        </main>
+
+        <div class="blur"></div>
+        <footer class="footer">
+            <div class="footer__content">
+                <nav class="footer__content-nav">
+                    <ul class="footer__content-nav--list">
+                        <li><a class="footer__liste-nav--list--text" href="../fr/billetterie.html">Billetterie</a></li>
+                        <li><a class="footer__liste-nav--list--text" href="../fr/information.html">Informations</a></li>
+                        <li><a class="footer__liste-nav--list--text" href=../fr/contact.html">Nous contacter</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__content-reseaux">
+                    <a class="footer__content-reseaux--lien" href="https://www.instagram.com/blandine_nhy/"
+                        target="_blank">
+                        <img class="footer__content-reseaux--img" src="../public/assets/Instagram.svg"
+                            alt="Logo Instagram">
+                    </a>
+                    <a class="footer__content-reseaux--lien" href="https://twitter.com/B_8055_" target="_blank">
+                        <img class="footer__content-reseaux--img" src="../public/assets/TwitterX.svg" alt="Logo X">
+                    </a>
+                </div>
+                <div class="footer__content-down">
+                    <div>
+                        <h6>Mention Légales</h6>
+                        <h6>Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                                href="https://mmimontbeliard.com" target="_blank">MMI Montbéliard</a></h6>
+                    </div>
+                    <a href="#">
+                        <img src="../public/assets/Logo.svg" alt="Logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
