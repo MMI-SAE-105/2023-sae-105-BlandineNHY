@@ -70,3 +70,17 @@ bodytext {
 .forms {
     margin-top: 120px;
 }
+
+.navbar {
+position: absolute;
+padding: 50px;
+display: flex
+width: 100%;
+justify-content: space-between;
+box-sizing: border-box;
+}
+
+.navbar__logo {
+    width: 100px;
+    height: 100px;
+}
